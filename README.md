@@ -12,6 +12,6 @@ jekyll serve
 ## 开始
 
 
-##致谢
+## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
 
