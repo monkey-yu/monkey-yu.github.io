@@ -16,7 +16,7 @@ RSS: false
 weibo_username:     monkey-yu
 zhihu_username:     monkey-yu
 github_username:    monkey-yu
-twitter_username:   monkey-yu
+#twitter_username:   
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -78,8 +78,8 @@ ga_domain:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "那一年盛夏，心愿许的无限大。"
+sidebar-avatar: /img/blog_img/avatar-yu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -98,42 +98,10 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
-
-
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "阮一峰",
+        href: "http://www.ruanyifeng.com/home.html"
     }
 ]

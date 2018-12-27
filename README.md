@@ -10,8 +10,12 @@ jekyll serve
 ```
 服务运行地址：http://127.0.0.1:4000/
 ## 开始
-
+1. 配置GitHub Pages 。可通过https://monkey-yu.github.io/ 访问博客网站。
+2. 
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
+
+## 参考链接
+1. [jekyll官网](http://jekyllcn.com/docs/home/)
 
