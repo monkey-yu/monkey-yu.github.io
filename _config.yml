@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     monkey-yu
+weibo_username:     濯雩
 zhihu_username:     monkey-yu
 github_username:    monkey-yu
 #twitter_username:   
