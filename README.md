@@ -18,4 +18,4 @@ jekyll serve
 
 ## 参考链接
 1. [jekyll官网](http://jekyllcn.com/docs/home/)
-
+2. [Jekyll With Liquid](http://huangyanxiang.com/2017/09/20/jekyll-with-liquid.html)

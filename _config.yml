@@ -25,7 +25,8 @@ github_username:    monkey-yu
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: pretty
+# 在你的博客的头信息中设置 permalink 会造成分页功能的瘫痪。缺省设置 permalink 即可。
+# permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
