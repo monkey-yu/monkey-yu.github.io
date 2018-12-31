@@ -25,7 +25,7 @@ Source Map 的原理是通过在构建时，依赖特定的 .json 文件，记�
 
 一共有 10 种 source map 配置策略，其中新增了 `nosources-source-map` 类型, 还包括图中没有提及的 `inline-source-map` 与 `hidden-source-map`。
 
-![](/Users/mac13/Desktop/source-map-01.jpg)
+![](/img/post_img/sourcemap/source-map-01.jpg)
 
 ### Source Map 选项之间的区别
 
