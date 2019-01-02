@@ -4,7 +4,7 @@ title:      "同步、异步、阻塞与非阻塞"
 subtitle:   " \"同步、异步、阻塞与非阻塞 \""
 date:       2018-12-27 12:00:00
 author:     "monkey-yu"
-header-img: "img/blog_img/tree.jpg"
+header-img: "img/tree.jpg"
 catalog: true
 tags:
     - 技术
