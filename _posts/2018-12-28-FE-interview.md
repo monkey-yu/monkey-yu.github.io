@@ -8,6 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
     - 前端
+    - 面试
 ---
 > 前端面试第一讲
 
