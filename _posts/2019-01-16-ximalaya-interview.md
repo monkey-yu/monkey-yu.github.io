@@ -78,3 +78,41 @@ performance怎么用？ 还是不很清楚。
 javascript中的默认行为是指javascript中事件本身具有的属性，如<a>标签可以跳转，文本框可输入文字、字母等，右键浏览器会出现菜单等行为便被称为浏览器的默认行为。
 
 为什么我们要消除浏览器的默认行为呢？因为有时在你给内容添加一个事件时，浏览器默认的为冒泡型事件触发机制,所以会触发你不想触发的事件。我们就需要消除浏览器的默认行为来使我们设置的事件能被正确触发。
+
+（1）阻止事件冒泡，使成为捕获事件触发机制。
+
+```
+function stopBubble(e){
+    // 如果提供了事件对象，则这是一个非IE浏览器
+    if(e && e.stopPropagation)
+    	// 因此它支持w3c的stopPropagation()方法
+    	e.stopPropagation();
+    else
+    	// 否则，我们需要使用IE的方式来取消事件冒泡
+    	window.event.cancelBubble = true;
+}
+```
+
+(2)当按键后，不希望按键继续传递给如HTML文本框对象时，可以取消返回值，即停止默认事件默认行为：
+
+```
+// 阻止浏览器的默认行为
+function stopDefault(e){
+    //阻止默认浏览器动作（w3c）
+    if(e && e.preventDefault)
+    	e.preventDefault();
+    // IE中阻止函数器默认动作的方式
+    else
+    	window.event.returnValue = false;
+    return false;
+}
+```
+
+#### Q5.写一个正则匹配，中国大陆的11位电话号码？
+
+```
+var regExp = /^1[0-9]{10}$/;
+```
+
+#### Q6.对象原型上有哪些方法？
+
