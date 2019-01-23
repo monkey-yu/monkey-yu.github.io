@@ -116,3 +116,87 @@ var regExp = /^1[0-9]{10}$/;
 
 #### Q6.对象原型上有哪些方法？
 
+没搞明白面试官的问题。对象属性：
+
+- 属性读写
+- 属性删除 `delete 对象.属性` 或者 `delete 对象[属性]`
+- 属性检测   `in操作符`  `obj.hasOwnProperty('属性')`  
+- 属性是否可枚举  `obj.propertyIsEnumerable('属性')`
+- 定义属性  Object.defineProperty()
+
+![obj-1](/Users/mac13/Desktop/obj-1.png)
+
+用Object.defineProperty()定义的属性的参数都是false,即可枚举、可修改等参数都为false。
+
+属性的方法：
+
+- getter/setter方法
+
+```
+var man={
+    name:'monkey-yu',
+    get age(){
+        return new Date().getFullYear()-1992;
+    },
+    set age(val){
+        console.log("age can\'t be set to " + val)
+    }
+}
+console.log(man.age)  // 27
+man.age = 100;        // age can't be set to 100
+console.log(man.age)  // 27
+
+```
+
+属性的标签：
+
+- writable  该属性是否可写
+- enumerable  该属性是否可遍历
+- configurable  该属性是否可修改
+
+```
+var person ={};
+Object.defineProperty(person,'name',{
+    configurable:false,
+    writable:false,
+    enumerable:true,
+    value:"monkey-yu"
+})
+person.name      // monkey-yu
+person.name ='zhaoyu' ;
+person.name ;    // monkey-yu
+delete person.name ;    // false
+```
+
+#### Q7.map 和for是否可以break?
+
+保留。
+
+#### Q8.跨域是什么？JsonP 返回的值怎么处理？
+
+保留。
+
+#### Q9.前端路由？
+
+保留。
+
+#### Q10.数据管理？
+
+Redux 、vuex 、rxjs
+
+#### Q11.双向绑定怎么实现的？
+
+define.propertype, proxy ,脏检查机制
+
+#### Q12.前端有哪些安全问题？
+
+csrf 攻击 、 http 
+
+#### Q13.flex布局，参数？主轴如何定义？
+
+保留。
+
+#### Q14.css动画？
+
+transition 、translate 、 animate
+
