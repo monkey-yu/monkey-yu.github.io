@@ -124,7 +124,7 @@ var regExp = /^1[0-9]{10}$/;
 - 属性是否可枚举  `obj.propertyIsEnumerable('属性')`
 - 定义属性  Object.defineProperty()
 
-![obj-1](/Users/mac13/Desktop/obj-1.png)
+![obj-1](/img/post_img/js-interview/obj-1.png)
 
 用Object.defineProperty()定义的属性的参数都是false,即可枚举、可修改等参数都为false。
 
