@@ -50,7 +50,7 @@ function bar() {
 bar()
 ```
 
-![](/Users/mac13/Desktop/event-loop-1.jpg)
+![](/img/post_img/js-interview/event-loop-1.jpg)
 
 大家可以在上图清晰的看到报错在 `foo` 函数，`foo` 函数又是在 `bar` 函数中调用的。
 
@@ -63,7 +63,7 @@ function bar(){
 bar()
 ```
 
-![](/Users/mac13/Desktop/event-loop-2.jpg)
+![](/img/post_img/js-interview/event-loop-2.jpg)
 
 ### 浏览器中的Event Loop 
 
@@ -71,7 +71,7 @@ bar()
 
 当我们执行 JS 代码的时候其实就是往执行栈中放入函数，那么遇到异步代码的时候该怎么办？当遇到异步代码时，会被挂起并在需要执行的时候加入到task队列中。一旦执行栈为空，Event Loop就会从Task队列中拿出需要执行的代码并放入到执行栈中。所以本质上来说JS中的异步还是同步行为。
 
-![](/Users/mac13/Desktop/event-loop-3.jpg)
+![](/img/post_img/js-interview/event-loop-3.jpg)
 
 不同的任务源会被分配到不同的task队列中，任务源可以氛围微任务（microtask）和宏任务（macrotask）。在ES6规范中，microtask称为jobs,macrotask称为task。下面来看段代码的执行顺序：
 
@@ -145,6 +145,6 @@ Node 中的 Event Loop 和浏览器中的是完全不相同的东西。
 
 Node 的 Event Loop 分为 6 个阶段，它们会按照**顺序**反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。
 
-![](/Users/mac13/Desktop/event-loop-4.jpg)
+![](/img/post_img/js-interview/event-loop-4.jpg)
 
 > end !
