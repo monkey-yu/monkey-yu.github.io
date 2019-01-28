@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 技术
+    - 前端
     - 面试
 ---
 
