@@ -317,7 +317,7 @@ https://www.sinacloud.com/doc/sae/python/tools.html#tian-jia-di-san-fang-yi-lai-
 
 举例安装requests：
 
-![weixin-6](/img/post_img/weixin-app/weixin-6.png)
+![weixin-6](/img/post_img/weixin-app/weixin-6.jpg)
 
 之后编辑 index.wsgi，在顶部添加代码即可:
 
