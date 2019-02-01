@@ -4,7 +4,7 @@ title:      "微信公众号开发"
 subtitle:   " \"微信公众号开发 \""
 date:       2019-01-30 16:00:00
 author:     "monkey-yu"
-header-img: "img/post-bg-mac.jpg"
+header-img: "img/post-bg-bridge.jpeg"
 catalog: true
 tags:
     - 微信
