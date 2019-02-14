@@ -31,16 +31,27 @@ description: "生是见识，不是活着。"
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="page-item" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> < </a>
+  {% else %}
+    <a class="page-item"> < </a>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em class="page-item current-page" >{{ page }}</em>
+    {% elsif page == 1 %}
+      <a class="page-item" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a class="page-item" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %} 
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a class="page-item" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> > </a>
+  {% else %}
+    <a class="page-item"> > </a>
+  {% endif %}
+</div>
+{% endif %}
