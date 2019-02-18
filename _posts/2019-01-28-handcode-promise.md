@@ -8,6 +8,6 @@ header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
     - 面试
-    - 前端
+    - ES6
 ---
 > 手写Promise 来自掘金小册

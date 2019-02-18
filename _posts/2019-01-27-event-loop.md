@@ -8,7 +8,7 @@ header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
     - 面试
-    - 前端
+    - JS
 ---
 > Event Loop 来自掘金小册
 

@@ -7,7 +7,6 @@ author:     "monkey-yu"
 header-img: "img/avatar-yu.jpg"
 catalog: true
 tags:
-    - 面试
     - 随笔
 ---
 

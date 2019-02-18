@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 前端
+    - 技术
 ---
 
 #### 什么是单页应用

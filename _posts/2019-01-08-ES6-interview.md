@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 前端
+    - ES6
     - 面试
 ---
 

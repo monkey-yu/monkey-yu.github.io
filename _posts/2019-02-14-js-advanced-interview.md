@@ -7,8 +7,8 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 前端
     - 面试
+    - JS
 ---
 
 > JS进阶知识点及常考面试题 来自掘金小册

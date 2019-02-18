@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 前端
+    - JS
     - 面试
 ---
 > JS 异步编程及常考面试题 来自掘金小册
