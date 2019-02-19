@@ -69,7 +69,7 @@
 -->
 
 
-
+<!-- 在Archive 页面添加archive.js脚本 -->
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
 <script>
@@ -83,7 +83,20 @@
 </script>
 <script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
 {% endif %}
-
+<!-- 在Archive 页面添加tag.js脚本 -->
+{% if page.title == 'Tag' %}
+<!-- jquery.tagcloud.js -->
+<script>
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: {start: '#bbbbee', end: '#2f93b4'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='{{ "/js/tag.js " | prepend: site.baseurl }}'></script>
+{% endif %}
 <!--fastClick.js -->
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
