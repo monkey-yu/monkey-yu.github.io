@@ -46,6 +46,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
     var $lastFocusButton = null;
     var sectionTopArticleIndex = [];
     var hasInit = false;
+    console.log(site.posts)
 
     $sections.each(function() {
       sectionArticles.push($(this).find('.item'));

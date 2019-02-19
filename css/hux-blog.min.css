@@ -33,3 +33,33 @@
 .pagination .current-page {
   color: #0085a1;
 }
+/* archive css */
+.archive-container{
+  width: 1170px;
+  margin: 0 auto;
+}
+.archive-container .page_title{
+  padding-bottom: 30px;
+  border-bottom: 1px dotted #e1e4e8;
+}
+.archive-container .page_title .bold-text{
+  font-size: 2em;
+  font-weight: bold;
+}
+.archive-container .page_title .normal-text{
+  color: rgba(0,0,0,0.38);
+  font-size: 13px;
+}
+.archive-container ul li{
+  list-style: none
+}
+.archive_item{
+  font-size: 16px;
+  line-height: 60px;
+  border-bottom: 1px dotted #e1e4e8;
+}
+.archive_item span{
+  font-size: 16px;
+  color: #0085a1;
+  font-weight: bold;
+}

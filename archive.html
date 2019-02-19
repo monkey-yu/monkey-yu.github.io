@@ -13,10 +13,30 @@ https://github.com/kitian616/jekyll-TeXt-theme
 {% include intro-header.html type='page' short=true %}
 
 <!-- Main Content -->
-<div class="container">
+<div class="archive-container">
+	<p class="page_title">
+		<span class="bold-text">3</span>
+		<span class="normal-text">个月</span>
+		<span class="bold-text">{{site.posts.size}}</span>
+		<span class="normal-text">篇文章</span>
+	</p>
+	<ul>
+			{%- assign _sorted_list = site.posts | sort: 'date'| reverse -%}
+			{%- for _article in _sorted_list -%}
+			{%- assign _currentdate = _article.date | date: '%Y-%m' -%}
+			{%- if _currentdate != _date -%}
+			
+		<li class="archive_item">
+				<a href="">	{{_currentdate}} &nbsp;&nbsp;<span>{{_sorted_list.size}}篇</span></a>
+		</li>
+		{%- assign _date = _currentdate -%}
+		{%- endif -%}
+		{%- endfor -%}
+	</ul>
+</div>
+<!-- <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<!-- Tags (as filter) -->
 			<div id='tag_cloud' class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
 					Show All
@@ -37,7 +57,6 @@ https://github.com/kitian616/jekyll-TeXt-theme
         {{ tags | split:'</a>' | sort | join:'</a>' }}
 			</div>
 
-            <!-- Article List -->
 			<div class="mini-post-list js-result d-none">
 			{%- assign _sorted_list = site.posts -%}
 			{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
@@ -55,7 +74,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					{%- endif -%}
 				{%- endfor -%}
 
-			{% comment %} group by year {% endcomment %}
+			{% comment %} group by year and month {% endcomment %}
 			{%- assign _currentdate = _article.date | date: '%Y-%b' -%}
 			{%- if _currentdate != _date -%}
 				{%- unless forloop.first -%}</section>{%- endunless -%}
@@ -82,4 +101,4 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			{% endfor %}
 		</div>
 	</div>
-</div>
+</div> -->
