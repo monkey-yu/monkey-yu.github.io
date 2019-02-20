@@ -176,7 +176,18 @@ delete person.name ;    // false
 
 #### Q8.跨域是什么？JsonP 返回的值怎么处理？
 
-保留。
+由于浏览器出于安全考虑，有同源策略。即协议、域名、端口有一个不同就是跨域。解决跨域的方法有：（1）JSonP (2)CORS 。
+
+JSONP方法：原理是利用<script>标签没有跨域限制的漏洞。通过<script>标签指向一个需要访问的地址并提供一个回调函数来接收数据。
+
+```
+<script src="http://domain/api?param1=a&param2=b&callback=jsonp"></script>
+<script>
+	function jsonp(data){
+        console.log(data)
+	}
+</script>
+```
 
 #### Q9.前端路由？
 
@@ -196,9 +207,60 @@ csrf 攻击 、 http
 
 #### Q13.flex布局，参数？主轴如何定义？
 
-保留。
+flex布局是指弹性布局，用来为盒模型提供最大的灵活性。
+
+给一个元素添加display:flex，后改元素即为flex容器，它的所有子元素自动成为容器成员，即为flex item。
+
+属性总结表：
+
+| 谁的属性？ | 属性名称        | 属性意义                       | 属性可能值                                                   |
+| ---------- | --------------- | ------------------------------ | ------------------------------------------------------------ |
+| 容器       | flex-direction  | 决定item排列方向               | Row, column，row-reverse，column-reverse                     |
+| 容器       | flex-wrap       | 排列不下是，item如何换行       | row ,nowrap                                                  |
+| 容器       | justify-content | item在主轴上的对齐方式         | Flex-start,flex-end,center,space-between,space-around        |
+| 容器       | align-items     | item在另一轴上的对齐方式       | Flex-start,flex-end,center,baseline,strench                  |
+| 容器       | align-content   | 多根轴线的对齐方式             | Flex-start,flex-end，center，space-between,space-around,strench |
+| Item       | Order           | 定义item排列顺序               | 整数，默认为0，越小越靠前                                    |
+| Item       | flex-grow       | 当有多余空间时，item的放大比例 | 默认为0，即有多余空间也不放大                                |
+| Item       | flex-shrink     | 当空间不足时，item的缩小比例   | 默认为1，即空间不足时缩小                                    |
+| Item       | flex-basis      | 项目在主轴上占据的空间         | 长度值，默认为auto                                           |
+| Item       | Flex            | Grow,shrink,basis的简写        | 默认为 0，1，auto                                            |
+| Item       | align-self      | 单个item独特的对齐方式         | 同align-items,可覆盖align-items属性                          |
 
 #### Q14.css动画？
 
-transition 、translate 、 animate
+1. transform: 变形。有旋转、倾斜、缩放、移动等属性。例如：transform: rotate(10deg);  旋转10度
+
+2. transition:过渡。允许css的属性值在一定的时间区间内平滑的过渡。需要有触发条件，比如hover效果。例子：
+
+```
+  a {
+    transition: background 0.5s ease-in,color 0.3s ease-out;
+    transition：transform .4s ease-in-out;
+  }
+```
+
+3. animation(@keyframes规则）：为元素实现动画效果，通过百分比来规定改变发生的时间。使用的时候为了兼容可加上`-webkit-、-o-、-ms-、-moz-、-khtml-`等前缀以适应不同的浏览器。
+
+例子：名字为`gif`的`@keyframes` ，动画完成需要的总时长为`1.4s`,刚开始的时候图片旋转为0度，动画完成的时候图片旋转360度。
+
+```
+.load-border {
+    width: 120px;
+    height: 120px;
+    background: url(../images/loading_icon.png) no-repeat center center;
+    -webkit-animation: gif 1.4s infinite linear;
+    animation: gif 1.4s infinite linear; 
+}
+@keyframes gif {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+```
 
