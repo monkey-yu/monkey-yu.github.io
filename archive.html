@@ -24,10 +24,12 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			{%- assign _sorted_list = site.posts | sort: 'date'| reverse -%}
 			{%- for _article in _sorted_list -%}
 			{%- assign _currentdate = _article.date | date: '%Y-%m' -%}
+			
 			{%- if _currentdate != _date -%}
 			
 		<li class="archive_item">
-				<a href="">	{{_currentdate}} &nbsp;&nbsp;<span>{{_sorted_list.size}}篇</span></a>
+				<a href="">	{{_currentdate}} &nbsp;&nbsp;
+				<span>{{_sorted_list.size}}篇</span></a> 
 		</li>
 		{%- assign _date = _currentdate -%}
 		{%- endif -%}
