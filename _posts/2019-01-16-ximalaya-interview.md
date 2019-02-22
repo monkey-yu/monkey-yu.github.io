@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 面试
+    - 实战面经 
 ---
 > 2019年1月16日，我参加了喜马拉雅前端面试。以下是自己整理的面试题汇总，答案是当时的口述答案以及事后自己网上查询补全的，如有不准确的地方，请指正。联系邮箱📮：zhao_yu914888156@qq.com。 下面开始正文。
 

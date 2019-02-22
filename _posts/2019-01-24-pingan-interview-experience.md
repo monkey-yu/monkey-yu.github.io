@@ -7,7 +7,7 @@ author:     "monkey-yu"
 header-img: "img/avatar-yu.jpg"
 catalog: true
 tags:
-    - 随笔
+    - 实战面经
 ---
 
 > 一次"奇葩"的大厂面试经历。

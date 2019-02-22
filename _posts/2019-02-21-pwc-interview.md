@@ -7,9 +7,9 @@ author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
-    - 面试
+    - 实战面经
 ---
-> 2019年2月21日上午，参加了pwc(普华永道)的面试。主要考察了angular2+知识点，现在整理回顾。
+> 2019年2月21日上午，参加了pwc(普华永道)的面试。几乎全部考察了angular2+知识点，现在整理回顾。
 
 #### Q1.ng1和ng2脏检查的区别？
 
@@ -24,7 +24,7 @@ tags:
 ##### agular2更优的脏检查：
 
 1. zone.js库。zone.js是angular2的一个库，可以在js实现各种分区，分区代表一个执行上下文。ng2利用zone.js来拦截浏览器中的各种异步事件，然后在正确的时间调用digest循环，完全消除了需要开发者显示调用digest循环的情况。
-2. 单向数据流。上述ng1中在ng-model指令下发生改变，也会通知霜打括号表达式改变值，这隐含了指令至今互相影响、有依赖关系。跨监视器的依赖会创建出各种纠缠不清的数据流，导致很难追踪。因此ng2强制使用了单向数据流。
+2. 单向数据流。上述ng1中在ng-model指令下发生改变，也会通知双大括号表达式改变值，这隐含了指令之间互相影响、有依赖关系。跨监视器的依赖会创建出各种纠缠不清的数据流，导致很难追踪。因此ng2强制使用了单向数据流。
 
 **实现的方式：**
 
@@ -46,7 +46,7 @@ tags:
 | 作用域Scope       | 作用域链（相当于试图模型）                                   | 无                                                           |
 | 控制器Controller  | 非常重要，用于封装视图控制逻辑甚至业务逻辑                   | 无，组件化开发                                               |
 | 脏值检测          | $digest机制，多次检查整个作用域链                            | 采用zone.js库，取消主动脏值检查                              |
-| 指令              | 指令数量较多，指令与组件区别较少                             | 指令数量少，但指令更强大了；指令与组件区别明显，指令使用*符号，如\*nfGor、\*ngIf |
+| 指令              | 指令数量较多，指令与组件区别较少                             | 指令数量少，但指令更强大了；指令与组件区别明显，指令有的使用*符号，如\*nfGor、\*ngIf |
 | 组件              | 通过组件定义对象CDO进行组件定义                              | 通过装饰器元数据和组件类进行定义，组件呈现和控制页面上的一块区域；大量直接使用组件构建应用页面 |
 | 过滤器            | filter                                                       | 名字改为pipe,增加async、slice、percent去掉filter、limit、orderby .Angular2认为筛选/分页/排序属于视图控制逻辑/业务逻辑 |
 | 绑定              | 通过大量指令和模板插值实现，单向绑定双向绑定区别不明显       | （）从视图到数据方向，指事件；[]从数据到视图方向；[()]双向绑定；{{}}模板插值。严格区分两种单向绑定，区分单向和双向绑定 |
@@ -95,7 +95,7 @@ promise.then((value)=>{
 })
 ```
 
-Rxjs代码如下：
+observable代码如下：
 
 ```
 let start=new Observable((observer) =>{
@@ -108,7 +108,7 @@ let str=start.subscribe((value)=>{
 })
 ```
 
-##### 区别一：rxjs可以取消subscribe,promise不可以。使用unsubscribe()
+##### 区别一：observable可以取消subscribe,promise不可以。使用unsubscribe()
 
 ```
 setTimeout(()=>{
@@ -116,7 +116,7 @@ setTimeout(()=>{
 },1000)
 ```
 
-##### 区别二：rxjs可以发射多次，promise只能发射一次
+##### 区别二：observable可以发射多次，promise只能发射一次
 
 ```
 let setTime2;
@@ -138,5 +138,77 @@ let setTime2;
 
 ##### 区别三： rxjs 自带了许多的工具函数，如filter等
 
+##### 区别四：Observer对象 包含三个参数：next、error、complete；Promise参数 resolved、rejected
+
 ##### 补充：[obserbable学习链接](https://segmentfault.com/a/1190000008809168#articleHeader28)
+
+#### Q5.rxjs是什么？用过什么？
+
+RxJS是一个库，它通过使用observable序列来编写异步和基于事件的程序。它提供一个核心类型Observable,附带类型（Observer、Schedulers、Subjects）和一些操作符（map、filter、reduce、every等等），这些数组操作符可以把异步事件作为集合处理。
+
+#### Q6.ES6知道哪些？用过哪些？从中挑一些问问题。
+
+1. let,const 不会提升变量，不会挂载到window上。var会提升变量。const 是常量，一旦定义就不会改变。但如果const 一个对象，内容是可以改变的，地址问题。
+2. promise。
+3. generator。可以控制和恢复代码的执行。关键字yield,next()。
+4. 进而提到async await ，是generator函数的语法糖。
+5. class 类的继承 extends.
+
+#### Q7.interface 接口是什么？和抽象类的区别？
+
+含有abstract 修饰符的class即为抽象类，abstract 类不能创建实例对象。抽象类中的方法不必是抽象的。
+
+接口interface是抽象类的一种特例，接口中的所有方法都必须是抽象的。接口中的方法定义默认为public anstract类型。
+
+##### 两者区别：
+
+1. 抽象类可以有构造方法，接口中不能有构造方法
+2. 抽象类中有普通成员变量，接口中没有
+3. 抽象类中可以包含非抽象的普通方法，接口中所有方法必须都是抽象的，不能有非抽象的普通方法
+4. 抽象类中的抽象方法的访问类型可以是public 、proteced,接口中只能是public
+5. 抽象类中可以包含静态方法，接口不能
+6. 一个类可以实现多个接口，但只能继承一个抽象类。
+
+#### Q8.用过angular的什么管道（pipe）？如何自定义管道？
+
+管道是将数据作为输入，然后按照规则将其转换并输出。Angular2中内置的pipe有：DatePipe 、UpperCasePipe 、CurrencyPipe、PercentPipe等。
+
+##### 管道自定义：
+
+```
+import {PipeTransform,Pipe} from '@angular/core';
+/*
+	users:Array<any> =[
+        {name:'1',id:1},
+        {name:'2',id:2},
+        {name:'3',id:3},
+        {name:'4',id:4},
+	];
+*/
+@Pipe({name:'filterUser'})
+export class FilterUserPipe implement PipeTransform{
+    transform(allUsers:Array<any>,...args:any[]):any{
+        return allUser.filter(user => user.id >2);
+    }
+}
+```
+
+上述代码所示：
+
+- 需要使用@Pipe来装饰类
+- 实现PipeTransform的transform方法，该方法接收一个输入值和一些可选参数
+- 在@Pipe中指定管道名字，在模版中使用
+- 当定义完成后，不要忘记在Module的declarations数组中包含这个管道
+
+#### Q9.Angular2 中的service?
+
+在Angular中，我们所说的服务是指哪些能够被其他组件或指令调用的**单一的、可共享的**代码块。服务能够使我们提高代码的利用率，方便组件之间共享数据和方法，方便测试和维护。
+
+#### Q10.css3中的flex布局？一个子元素如何实现上下左右都居中？
+
+父元素display:flex；align-item:center;justify-content：center。
+
+#### Q11.css3中的动画，nimation？
+
+基于@keyframes，通过百分比来规定发生改变的时间。
 
