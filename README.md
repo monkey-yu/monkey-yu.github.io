@@ -12,8 +12,9 @@ jekyll serve
 ## 开始
 1. v1.0.0 配置GitHub Pages 。可通过https://monkey-yu.github.io/ 访问博客网站。
 2. v1.0.1 撰写博客，设置favicon.ico，删除冗余代码。
-3. 添加tag页为按照标签分类博客。
-4. 添加archive页为按照年月份分类博客，使用jekyll archive。
+3. v1.1.0 添加home页的分页功能。
+4. v1.1.1添加tag页为按照标签分类博客。
+5. v1.1.2添加archive页为按照年月份分类博客，使用jekyll archive。
 
 ## 待完成
 1. archive的年月份 后显示当月总blog数，并实现数字滚动。
