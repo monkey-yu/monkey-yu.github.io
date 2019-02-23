@@ -41,6 +41,7 @@
 .archive-container .page_title{
   padding-bottom: 30px;
   border-bottom: 1px dotted #e1e4e8;
+  margin-left: 50px;
 }
 .archive-container .page_title .bold-text{
   font-size: 2em;
