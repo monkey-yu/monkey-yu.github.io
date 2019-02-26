@@ -21,6 +21,7 @@ jekyll serve
 2. 添加浏览数量。
 3. 添加评论功能。
 4. 去掉blog正文中的标题前的#号。
+5. 添加categories来实现部分博客想隐藏的需求。
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
