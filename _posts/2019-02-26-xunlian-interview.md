@@ -4,7 +4,7 @@ title:      "讯联面试"
 subtitle:   " \"讯联面试 \""
 date:       2019-02-26 12:00:00
 author:     "monkey-yu"
-header-img: "img/post-bg-flower.png"
+header-img: "img/post-flower.png"
 catalog: true
 tags:
     - 实战面经
