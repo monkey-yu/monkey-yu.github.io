@@ -109,6 +109,7 @@ export class AppComponent {
 方法三：view-child。
 
 方法四：rxjs subject。
+参考连接：https://segmentfault.com/a/1190000008959575#articleHeader4
 
 5. observable 和promise区别？
 
