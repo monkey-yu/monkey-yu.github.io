@@ -15,7 +15,7 @@ tags:
 
 笔试题目，一张A4纸正反两面。笔试问题比较基础，这里只回忆题目，不提供答案了。
 
-同源策略、css属性选择器、css3新特性、css伪类、http method 、es6新特性、基本类型转换、js题目考察this指向、js题目考查定时器等。
+同源策略、css选择器、css3新特性、css伪类、http method 、es6新特性、基本类型转换、js题目考察this指向、js题目考查定时器等。
 
 #### 面试
 
@@ -109,14 +109,14 @@ export class AppComponent {
 方法三：view-child。
 
 方法四：rxjs subject。
+
 参考连接：https://segmentfault.com/a/1190000008959575#articleHeader4
 
 ##### Q5.observable 和promise区别？
 
 - observable可取消，使用unsubscribe，promise不可取消；
 - observable可以发射多次，promise只能发射一次；
-
-observer可以再次订阅。promise的状态：resolved ,rejected。
+- observer可以再次订阅。promise的状态：resolved ,rejected。
 
 ##### Q6.rxjs的操作符有哪些？
 
@@ -144,7 +144,7 @@ ngOninit 、ngOnDocheck、ngAftercheckinit 、ngAfterchecked、ngOnchanges 、ng
 
 ##### Q3.url过程介绍？
 
-纠结于开头是否要讲三次握手，域名解析等问题，后来面试官说主要考察前端部分。
+纠结于开头是否要讲三次握手，检查缓存新鲜度，域名解析等问题，后来面试官说主要考察前端部分。
 
 发起请求，获取数据，解析html为DOM 树，解析css 为cssOM 树，合并两个树生成渲染树，同时解析js文件，最后页面渲染。
 

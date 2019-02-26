@@ -208,7 +208,7 @@ export class FilterUserPipe implement PipeTransform{
 
 父元素display:flex；align-item:center;justify-content：center。
 
-#### Q11.css3中的动画，nimation？
+#### Q11.css3中的动画，animation？
 
 基于@keyframes，通过百分比来规定发生改变的时间。
 
