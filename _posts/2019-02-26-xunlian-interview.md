@@ -4,26 +4,22 @@ title:      "讯联面试"
 subtitle:   " \"讯联面试 \""
 date:       2019-02-26 12:00:00
 author:     "monkey-yu"
-header-img: "img/post-sea.jpeg"
+header-img: "img/post-bg-mac.jpg"
 catalog: true
 tags:
     - 实战面经
 ---
 > 2019年2月26日上午，参加了讯联的面试，现在整理回顾。
 
-### 笔试
+#### 笔试
 
 笔试题目，一张A4纸正反两面。笔试问题比较基础，这里只回忆题目，不提供答案了。
 
 同源策略、css属性选择器、css3新特性、css伪类、http method 、es6新特性、基本类型转换、js题目考察this指向、js题目考查定时器等。
 
-### 面试
+#### 面试
 
-#### 第一轮：
-
-先有2个面试官。自我介绍以及简历提到的前工作经验。
-
-##### 第一个面试官考察angular相关问题，具体如下：
+第一轮：先有2个面试官。自我介绍以及简历提到的前工作经验。第一个面试官考察angular相关问题，具体如下：
 
 1. Angular 的路由？
 
@@ -110,6 +106,10 @@ export class AppComponent {
 
 方法二：写一个公共的service，定义get set方法，来实现父子传值。
 
+方法三：view-child。
+
+方法四：rxjs subject。
+
 5. observable 和promise区别？
 
 - observable可取消，使用unsubscribe，promise不可取消；
@@ -129,9 +129,9 @@ map、filter 、reduce 、every 等。
 
 ngOninit 、ngOnDocheck、ngAftercheckinit 、ngAfterchecked、ngOnchanges 、ngOndestroy等。
 
-##### 第一个人问题问完了，然后是codepen上写一个**遮罩的效果。**
+第一个人问题问完了，然后是codepen上写一个**遮罩的效果。**
 
-##### 第二个人开始问，主要依据笔试题目问些问题。具体如下：
+第二个人开始问，主要依据笔试题目问些问题。具体如下：
 
 1. http 与 https?
 
@@ -159,17 +159,11 @@ ngOninit 、ngOnDocheck、ngAftercheckinit 、ngAfterchecked、ngOnchanges 、ng
 
 get请求参数紧跟url后面，post将参数写在body体内。请求数据量大小不同。
 
-#### 第二轮：
+第二轮：前2个面试官 + 1个新面试官。一起问问题，忘记问的啥问题了。还有问近期想学的技术栈，我回答了python,因为自己有个公众号想开发维护，面试官说挺好的…问angular和vue相比较，更想使用哪个？我回答了vue轻量级，上手快，angular较重等。
 
-前2个面试官 + 1个新面试官。一起问问题，忘记问的啥问题了。还有问近期想学的技术栈，我回答了python,因为自己有个公众号想开发维护，面试官说挺好的…问angular和vue相比较，更想使用哪个？我回答了vue轻量级，上手快，angular较重等。
+第三轮：第2轮中最后那个面试官，不全问技术问题，介绍了公司内部架构之类,3个事业部，技术栈，人员配置等等。其他不记得了。
 
-#### 第三轮：
-
-第2轮中最后那个面试官，不全问技术问题，介绍了公司内部架构之类,3个事业部，技术栈，人员配置等等。其他不记得了。
-
-#### 第四轮：
-
-好像是研发部的老大（前几个貌似是各事业部的leader）,问了自定义控件：日期控件，算法等。
+第四轮：好像是研发部的老大（前几个貌似是各事业部的leader）,问了自定义控件：日期控件，算法等。
 
 1. 自己实现日期控件？
 
