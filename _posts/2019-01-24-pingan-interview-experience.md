@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "一次大厂的面试经历"
-subtitle:   " \"一次大厂的面试经历 \""
+title:      "平安好医面试经历"
+subtitle:   " \"平安好医面试经历 \""
 date:       2019-01-24 16:00:00
 author:     "monkey-yu"
 header-img: "img/avatar-yu.jpg"
