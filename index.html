@@ -24,7 +24,8 @@ description: "生是见识，不是活着。"
     </a>
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+      | 浏览量: <span data-hk-page="{{ post.url | prepend: site.url }}"> - </span>次
+      </p>
 </div>
 <hr>
 {% endfor %} 

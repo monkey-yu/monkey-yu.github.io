@@ -13,15 +13,17 @@ jekyll serve
 1. v1.0.0 配置GitHub Pages 。可通过https://monkey-yu.github.io/ 访问博客网站。
 2. v1.0.1 撰写博客，设置favicon.ico，删除冗余代码。
 3. v1.1.0 添加home页的分页功能。
-4. v1.1.1添加tag页为按照标签分类博客。
-5. v1.1.2添加archive页为按照年月份分类博客，使用jekyll archive。
+4. v1.1.1 添加tag页为按照标签分类博客。
+5. v1.1.2 添加archive页为按照年月份分类博客，使用jekyll archive。
+6. v1.1.3 添加浏览数量功能，api基于[此处](http://jerryzou.com/posts/introduction-to-hit-kounter-lc/)。
 
 ## 待完成
 1. archive的年月份 后显示当月总blog数，并实现数字滚动。
-2. 添加浏览数量。
-3. 添加评论功能。
-4. 去掉blog正文中的标题前的#号。
-5. 添加categories来实现部分博客想隐藏的需求。
+2. 添加评论功能。
+3. 去掉blog正文中的标题前的#号。
+4. 添加categories来实现部分博客想隐藏的需求。
+5. 把grunt使用起来。
+6. 写篇grunt blog。
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
