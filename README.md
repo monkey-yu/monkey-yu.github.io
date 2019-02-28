@@ -20,10 +20,11 @@ jekyll serve
 ## 待完成
 1. archive的年月份 后显示当月总blog数，并实现数字滚动。
 2. 添加评论功能。
-3. 去掉blog正文中的标题前的#号。
-4. 添加categories来实现部分博客想隐藏的需求。
-5. 把grunt使用起来。
-6. 写篇grunt blog。
+3. 添加浏览数量功能。 ✅
+4. 去掉blog正文中的标题前的#号。
+5. 添加categories来实现部分博客想隐藏的需求。
+6. 把grunt使用起来。
+7. 写篇grunt blog。
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
