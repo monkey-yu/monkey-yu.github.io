@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "前端常用的设计模式"
-subtitle:   " \"前端常用的设计模式 \""
 date:       2019-02-22 16:00:00
 author:     "monkey-yu"
 header-img: "img/post-sea.jpeg"

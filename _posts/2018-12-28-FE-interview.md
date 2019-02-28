@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "前端面试题目"
-subtitle:   " \"前端面试题目 \""
 date:       2018-12-28 12:00:00
 author:     "monkey-yu"
 header-img: "img/post-bg-2015.jpg"

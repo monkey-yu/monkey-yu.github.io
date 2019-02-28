@@ -7,7 +7,7 @@
     {% if include.bottom %}
         <hr class="hidden-sm hidden-xs">
     {% endif %}
-    <h5><a href="{{'/tag/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+    <h5><a href="{{'/tag.html/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
     <div class="tags">
         {% capture tags %}
         {% comment %}
@@ -26,5 +26,3 @@
     </div>
 </section>
 {% endif %}
-<hr>
-本站总计访问量 <span data-hk-site>-</span> 次。

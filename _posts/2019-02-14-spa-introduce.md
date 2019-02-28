@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "web单页面应用"
-subtitle:   " \"web单页面应用\""
 date:       2019-02-14 15:00:00
 author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"

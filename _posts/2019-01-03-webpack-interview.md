@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "webpack面试总结"
-subtitle:   " \"webpack面试总结 \""
 date:       2019-01-03 12:00:00
 author:     "monkey-yu"
 header-img: "img/tree.jpg"

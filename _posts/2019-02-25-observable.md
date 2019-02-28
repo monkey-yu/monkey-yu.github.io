@@ -8,7 +8,7 @@ header-img: "img/post-sea.jpeg"
 catalog: true
 tags:
     - 技术
-    - js
+    - JS
 ---
 
 在介绍Observable之前，先了解两个设计模式：

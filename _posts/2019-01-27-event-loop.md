@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "Event Loop"
-subtitle:   " \"Event Loop\""
 date:       2019-01-27 09:00:00
 author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"

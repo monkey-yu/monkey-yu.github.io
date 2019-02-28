@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      "浏览器缓存机制"
-subtitle:   " \"浏览器缓存机制 \""
 date:       2019-02-18 12:00:00
 author:     "monkey-yu"
 header-img: "img/post-sea.jpeg"
