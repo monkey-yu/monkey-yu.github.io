@@ -24,7 +24,7 @@ jekyll serve
 4. 去掉blog正文中的标题前的#号。
 5. 添加categories来实现部分博客想隐藏的需求。
 6. 把grunt使用起来。
-7. 写篇grunt blog。
+7. 写篇grunt blog。✅
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
