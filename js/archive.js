@@ -46,7 +46,10 @@ https://github.com/kitian616/jekyll-TeXt-theme
     var $lastFocusButton = null;
     var sectionTopArticleIndex = [];
     var hasInit = false;
-    // console.log(site.posts)
+    // 给数字添加滚动效果
+    var postSizeNode = $('.js-post-sizes');
+    var postSize = postSizeNode[0].innerText;
+    // console.log('haha',postSize);
 
     $sections.each(function() {
       sectionArticles.push($(this).find('.item'));
@@ -54,13 +57,31 @@ https://github.com/kitian616/jekyll-TeXt-theme
 
     function init() {
       var i, index = 0;
+      var scrollObj ={
+        el:postSizeNode,
+        max:postSize,
+        start:0
+      };
+      // 执行数字的自增
+      increase(scrollObj);
       for (i = 0; i < $sections.length; i++) {
         sectionTopArticleIndex.push(index);
         index += $sections.eq(i).find('.item').length;
       }
       sectionTopArticleIndex.push(index);
     }
-
+    // 给数字添加滚动效果 函数
+    function increase(obj){
+      var item =obj.el, num = obj.max, start = obj.start;
+      time = setInterval(function(){
+        start++;
+        if(start > num){
+          start = num;
+          clearInterval(time);
+        }
+        item.text(start)
+      },40)
+    }
     function searchButtonsByTag(_tag/*raw tag*/) {
       if (!_tag) {
         return $tagShowAll;
