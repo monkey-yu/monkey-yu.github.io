@@ -18,7 +18,7 @@ jekyll serve
 6. v1.1.3 添加浏览数量功能，api基于[此处](http://jerryzou.com/posts/introduction-to-hit-kounter-lc/)。
 
 ## 待完成
-1. archive的年月份 后显示当月总blog数，并实现数字滚动。
+1. archive的blog总数实现数字滚动。✅
 2. 添加评论功能。
 3. 添加浏览数量功能。 ✅
 4. 去掉blog正文中的标题前的#号。
