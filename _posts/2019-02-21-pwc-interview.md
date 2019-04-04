@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "pwc面试"
+title:      "pwc"
 date:       2019-02-21 12:00:00
 author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"

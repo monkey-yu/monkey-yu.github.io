@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "平安好医面试经历"
+title:      "平安好医"
 date:       2019-01-24 16:00:00
 author:     "monkey-yu"
 header-img: "img/post-sea.jpeg"

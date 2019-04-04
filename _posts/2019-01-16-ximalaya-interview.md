@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "喜马拉雅面试"
+title:      "喜马拉雅"
 date:       2019-01-16 12:00:00
 author:     "monkey-yu"
 header-img: "img/post-bg-mac.jpg"
