@@ -172,5 +172,5 @@ priorityQueue.print();
 
 循环队列的一个例子就是击鼓传花游戏。
 
-> 接下一博客 [数据结构与算法（二）]()
+> 接下一博客 [数据结构与算法（二）](https://monkey-yu.github.io/2019/04/08/data-structure-algorithms2.html)
 
