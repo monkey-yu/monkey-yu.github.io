@@ -3,7 +3,7 @@ layout:     post
 title:      "数据结构与算法（二）"
 date:       2019-04-08 15:00:00
 author:     "monkey-yu"
-header-img: "img/buildings.jpg"
+header-img: "img/nature-cold.jpg"
 catalog: true
 tags:
     - JS

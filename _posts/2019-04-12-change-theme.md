@@ -3,7 +3,7 @@ layout:     post
 title:      "前端换肤"
 date:       2019-04-12 15:00:00
 author:     "monkey-yu"
-header-img: "img/buildings.jpg"
+header-img: "img/daytime-flow.jpg"
 catalog: true
 tags:
     - CSS
