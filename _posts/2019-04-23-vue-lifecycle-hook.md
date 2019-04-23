@@ -15,7 +15,7 @@ tags:
 
 下图是Vue官网的生命周期图：
 
-![lifecycle](img/post_img/vue/lifecycle.png)
+![lifecycle](/img/post_img/vue/lifecycle.png)
 
 #### Vue1.0 VS Vue2.0 生命周期
 
@@ -119,9 +119,9 @@ tags:
 
 执行上述代码，结果如下：
 
-![lifecycle2](img/post_img/vue/lifecycle2.png)
+![lifecycle2](/img/post_img/vue/lifecycle2.png)
 
-![lifecycle3](img/post_img/vue/lifecycle3.png)
+![lifecycle3](/img/post_img/vue/lifecycle3.png)
 
 说明以下：
 
