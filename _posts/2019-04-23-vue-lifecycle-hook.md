@@ -155,34 +155,34 @@ tags:
 
      同理，离开组件时也不会触发beforeDestroy和destroyed，可以使用deactivated离开缓存组件的钩子来代替。
 
-4.触发钩子的完整顺序：
+4. 触发钩子的完整顺序：
 
-​	将路由导航、keep-alive、组件生命周期钩子结合起来，触发顺序，假设从a组件离开，第一次进入b组件：
+  将路由导航、keep-alive、组件生命周期钩子结合起来，触发顺序，假设从a组件离开，第一次进入b组件：
 
-​	1- beforeRouteLeave:路由组件的组件离开路由前钩子，可取消路由离开.
+  ​	1- beforeRouteLeave:路由组件的组件离开路由前钩子，可取消路由离开.
 
-​	2- beforeEach:路由全局前置守卫，可用于登录验证、全局路由loading等。
+  ​	2- beforeEach:路由全局前置守卫，可用于登录验证、全局路由loading等。
 
-​	3-beforeEnter:路由独享守卫
+  ​	3-beforeEnter:路由独享守卫
 
-​	4-beforeRouteEnter:路由组件的组件进入路由前钩子.
+  ​	4-beforeRouteEnter:路由组件的组件进入路由前钩子.
 
-​	5-beforeResolve:路由全局解析守卫
+  ​	5-beforeResolve:路由全局解析守卫
 
-​	6-afterEach:路由全局后置钩子
+  ​	6-afterEach:路由全局后置钩子
 
-​	7-beforeCreate:组件生命周期，不能访问this。
+  ​	7-beforeCreate:组件生命周期，不能访问this。
 
-​	8-created:组件的生命周期，可以访问this,不可以访问dom
+  ​	8-created:组件的生命周期，可以访问this,不可以访问dom
 
-​	9-beforeMount: 组件生命周期
+  ​	9-beforeMount: 组件生命周期
 
-​	10-deactivated:离开缓存组件a，或者触发a的beforeDestroy和destroyed组件销毁钩子。
+  ​	10-deactivated:离开缓存组件a，或者触发a的beforeDestroy和destroyed组件销毁钩子。
 
-​	11-mounted:访问/操作dom。
+  ​	11-mounted:访问/操作dom。
 
-​	12-activated:进入缓存组件，进入a的嵌套子组件(如果有的话)。
+  ​	12-activated:进入缓存组件，进入a的嵌套子组件(如果有的话)。
 
-​	13- 执行beforeRouteEnter回调函数next。
+  ​	13- 执行beforeRouteEnter回调函数next。
 
 > end！
