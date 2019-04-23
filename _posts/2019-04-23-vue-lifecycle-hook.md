@@ -139,9 +139,7 @@ tags:
 
 #### 生命周期总结
 
-1. ajax请求最好放在created里面，因为这时可以访问this了，请求到数据就可以直接放在data里了。
-
-**碰到面试官问：ajax请求应该放在哪个生命周期。**
+1. ajax请求最好放在created里面，因为这时可以访问this了，请求到数据就可以直接放在data里了。**碰到面试官问：ajax请求应该放在哪个生命周期。**
 
 2. 关于dom的操作要放在mounted里面，在mounted前面访问dom是undefined。
 
