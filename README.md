@@ -21,10 +21,9 @@ jekyll serve
 1. archive的blog总数实现数字滚动。✅
 2. 添加评论功能。
 3. 添加浏览数量功能。 ✅
-4. 去掉blog正文中的标题前的#号。
-5. 添加categories来实现部分博客想隐藏的需求。
-6. 把grunt使用起来。
-7. 写篇grunt blog。✅
+4. 添加projects页面，显示github上的项目。
+5. 把grunt使用起来。
+6. 写篇grunt blog。✅
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
