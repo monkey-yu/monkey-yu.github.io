@@ -3,17 +3,17 @@ layout:     post
 title:      "CSS 规范"
 date:       2019-05-10 09:00:00
 author:     "monkey-yu"
-header-img: "img/daytime-flow.jpg"
+header-img: "img/buildings.jpg"
 catalog: false
 tags:
-    - Vue
+    - CSS
 ---
 
 一、命名：
 
 可以用连字符或者下滑线，也可以用驼峰命名形式。.title-my或者.title_my或者.titleMy。
 
-使用BEM命名方式。
+**使用BEM命名方式**: block-name__element-name--modifier-name，也就是模块名 + 元素名 + 修饰器名。
 
 二、属性书写顺序：
 
