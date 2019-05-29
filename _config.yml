@@ -102,11 +102,11 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "阮一峰",
-        href: "http://www.ruanyifeng.com/home.html"
-    },
-    {
       title: 'nan_cunpei',
       href: 'https://www.kopei.top'
+    },
+     {
+      title: 'fu_pinyou',
+      href: 'http://blog.neulana.com/'
     }
 ]
