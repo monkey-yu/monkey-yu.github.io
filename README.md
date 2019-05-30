@@ -24,6 +24,7 @@ jekyll serve
 4. 添加projects页面，显示github上的项目。
 5. 把grunt使用起来。
 6. 写篇grunt blog。✅
+7. 修改布局，添加一页，显示几大块：projects,posts,about me,tags.分别点击跳转进去。
 
 ## 致谢
 1. 这个模板是从https://github.com/Huxpro/huxpro.github.io fork的。感谢作者。
