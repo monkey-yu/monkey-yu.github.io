@@ -1,8 +1,10 @@
 > 我将带你看世界，请务必玩得尽兴。
 
-hello,我是赵瑜，是徐剑的小猴子。
+hello，我是赵瑜，是徐剑的小猴子。
 
-1992年破壳而出，2015年大学毕业。2016年入职东吴在线金融科技有限公司，现更名为（东吴金科）。两年期间负责公司内理财网站的前端开发以及新项目研发。同时也参与过h5开发。目前就职于明码上海生物科技有限公司。
+职业前端开发，喜欢旅行、游戏、音乐、撸猫、轰趴...
+
+更喜欢记录生活，欢迎关注我的个人微信公众号：小猴子日常。
 
 一些开源项目，戳 [github](https://github.com/monkey-yu):
 
@@ -15,3 +17,4 @@ hello,我是赵瑜，是徐剑的小猴子。
 4. [wechat-follow-zhihu](https://github.com/monkey-yu/wechat-follow-zhihu) 是一个仿知乎的微信小程序。
 
 5. [leetcode-for-javascript](https://github.com/monkey-yu/leetcode-for-javascript) 是用javascript解答leetcode题目列表。
+6. [vue-teamwork](https://github.com/monkey-yu/vue-teamwork) 是基于vue + element + mockdata开发的teamwork项目，供团队协作的工具。
