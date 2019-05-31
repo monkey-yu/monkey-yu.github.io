@@ -35,7 +35,7 @@ tags:
 
 栈的创建：
 
-```
+```js
 function Stack{
     var items = [];
     // 入栈
@@ -64,7 +64,7 @@ function Stack{
 
 使用栈的例子：
 
-```
+```js
 var stack =new Stack();
 stack.push(5);
 stack.peek();       // 5
@@ -77,7 +77,7 @@ stack.peek();       // 5
 
 代码实现：
 
-```
+```js
 // 实现10进制转2进制
 function devideBy2(DecNumber){
     var remStack = [], rem , resultString = '';
@@ -97,7 +97,7 @@ devideBy2(10);
 
 队列的创建：
 
-```
+```js
 function Queue{
     var items =[];
     // 进入队列
@@ -118,7 +118,7 @@ function Queue{
 
 使用队列：
 
-```
+```js
 var queue = new Queue();
 queue.enqueue(5);
 queue.front();      // 5
@@ -130,7 +130,7 @@ queue.front();      // 5
 
 优先队列的创建：priority值越小，优先级越高
 
-```
+```js
 function PriorityQuene{
     var items =[];
     function QueneElement(element,priority){
@@ -160,7 +160,7 @@ function PriorityQuene{
 
 使用优先队列：
 
-```
+```js
 var priorityQueue = new PriorityQueue();
 priorityQueue.enqueue("John", 2);
 priorityQueue.enqueue("Jack", 1);

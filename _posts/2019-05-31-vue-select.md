@@ -14,7 +14,7 @@ tags:
 
 Vue中的select选择器，使用elm框架实现的代码是：
 
-```
+```html
 // html 
 <el-select v-model="value" placeholder="请选择" @change="toAdd">
   <el-option
@@ -24,6 +24,9 @@ Vue中的select选择器，使用elm框架实现的代码是：
     :value="item.value">
   </el-option>
 </el-select>
+```
+
+```js
 // js
 export default {
     data() {
@@ -59,7 +62,7 @@ export default {
 
 下面是具体解决方式：
 
-```
+```html
 // html value后面传item 对象，使用object2String过滤器
 <el-select v-model="value" placeholder="请选择" size="mini" @change="toAdd">
   <el-option
@@ -68,7 +71,10 @@ export default {
     :label="item.title"
     :value="item | object2String">
   </el-option>
-</el-select>
+</el-select> 
+```
+
+```js
 // ts 1. 添加过滤器
   filters: {
     object2String:function(obj){
@@ -84,5 +90,4 @@ toAdd(item){
 }
 ```
 
-> end !
-
+> end ！

@@ -50,7 +50,7 @@ document.getElementById("btn").addEventListener('click',clickHandle);
 
 Subject 类定义：
 
-```
+```js
 class Subject{
     constructor(){
         this.observerCollection = []
@@ -70,7 +70,7 @@ class Subject{
 
 Observer类定义：
 
-```
+```js
 class Observer{
     constructor(name){
         this.name =name
@@ -83,7 +83,7 @@ class Observer{
 
 使用示例：
 
-```
+```js
 let subject =new Subject();       // 创建主题
 let observer1 = new Observer('yu');   // 创建观察者1
 let observer2 = new Observer('jian');  // 创建观察者2
@@ -114,7 +114,7 @@ subject.notifyObservers(); // 验证是否成功移除
 
 ##### ES5迭代器
 
-```
+```js
 function makeIterator(array){
     var nextIndex =0;
     return {
@@ -133,14 +133,14 @@ console.log(it.next().done);  // 'true'
 
 在ES6中，可以通过Symbol.iterator来创建可迭代对象的内部迭代器。
 
-```
+```js
 let arr=['a','b','c'];
 let iter = arr[Symbol.iterator]();
 ```
 
 调用next()方法来获取数组中的元素：
 
-```
+```js
 > iter.next()
 { value: 'a', done: false }
 > iter.next()
@@ -176,7 +176,7 @@ Observable就是一个函数，它接受一个Observer作为参数然后返回�
 
 DataSource -数据源
 
-```
+```js
 class DataSource{
     constructor(){
         let i =0;
@@ -202,7 +202,7 @@ class DataSource{
 
 myObservable
 
-```
+```js
 function myObservable(observer){
     let datasource = new DataSource();
     datasource.ondata = (e)=> observer.next(e);   // 处理数据流
@@ -216,7 +216,7 @@ function myObservable(observer){
 
 使用示例：
 
-```
+```js
 const unsub = myObservable({
     next(x){console.log(x)},
     error(err){console.error(err)},
@@ -241,7 +241,7 @@ const unsub = myObservable({
 
 Rxjs的核心特性时它的异步处理能力，但它也可以用来处理同步的行为。
 
-```
+```js
 var observable = Rx.Observable.create(function(observer){
     boserver.next('yu');
     observer.next('jian')
@@ -272,7 +272,7 @@ create 、of 、from 、fromEvent 、fromPromise 、empty 、never 、throw 、 
 
 ##### of 示例
 
-```
+```js
 var source =Rx.Observable.of('yu','jian');
 source.subscribe({
     next:function(value){
@@ -299,13 +299,13 @@ complete
 
 ##### fromEvent 示例
 
-```
+```js
 Rx.Observable.fromEvent(document.querySelector('button'),'click');
 ```
 
 ##### fromPromise 示例
 
-```
+```js
 var source = Rx.Observable
   .fromPromise(new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -348,7 +348,7 @@ never 操作符会返回一个无穷的 Observable，当我们订阅它后，什
 
 ##### throw
 
-```
+```js
 var source = Rx.Observable.throw('oop!');
 source.subscribe({
     next: function(value) {
@@ -399,7 +399,7 @@ Observer（观察者）是一个包含三个方法的对象，每当observable�
 
 Observer接口定义：
 
-```
+```js
 interface Observer<T>{
     closed?:boolean;  // 标识是否已经取消Observable对象的订阅
     next:(value:T) => void;
@@ -431,14 +431,14 @@ Observer 中的三个方法的作用：
 
 所有的observable对象一定会等到订阅后才开始执行，如果没有订阅不会执行。
 
-```
+```js
 var source = Rx.Observable.from([1,2,3,4,5]);
 var example = source.map(x => x + 1);
 ```
 
 上面的示例中，因为 example 对象还未被订阅，所以不会进行运算。这跟数组不一样，具体如下：
 
-```
+```js
 var source = [1,2,3,4,5];
 var example = source.map(x => x + 1); 
 ```
@@ -449,7 +449,7 @@ var example = source.map(x => x + 1);
 
 数组中的操作符如：filter、map 每次都会完整执行并返回一个新的数组，才会继续下一步运算。具体示例如下：
 
-```
+```js
 var source = [1,2,3,4,5];
 var example = source
                 .filter(x => x % 2 === 0) // [2, 4]
@@ -460,7 +460,7 @@ var example = source
 
 虽然 Observable 运算符每次都会返回一个新的 Observable 对象，但每个元素都是渐进式获取的，且每个元素都会经过操作符链的运算后才输出，而不会像数组那样，每个阶段都得完整运算。具体示例如下：
 
-```
+```js
 var source = Rx.Observable.from([1,2,3,4,5]);
 var example = source
               .filter(x => x % 2 === 0)

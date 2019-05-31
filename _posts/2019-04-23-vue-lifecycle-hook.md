@@ -37,7 +37,7 @@ tags:
 
 #### 生命周期探究
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

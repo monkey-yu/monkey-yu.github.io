@@ -83,7 +83,7 @@ Angular2指令分为两种：
 
 promise代码如下：
 
-```
+```js
 let promise = new Promise((resolve) =>{
     setTimeout(()=>{
         resolve('chen')
@@ -96,7 +96,7 @@ promise.then((value)=>{
 
 observable代码如下：
 
-```
+```js
 let start=new Observable((observer) =>{
     let timeOut = setTimeout(()=>{
         observer.next('chen2')
@@ -109,7 +109,7 @@ let str=start.subscribe((value)=>{
 
 ##### 区别一：observable可以取消subscribe,promise不可以。使用unsubscribe()
 
-```
+```js
 setTimeout(()=>{
     str.unsubscribe();
 },1000)
@@ -117,7 +117,7 @@ setTimeout(()=>{
 
 ##### 区别二：observable可以发射多次，promise只能发射一次
 
-```
+```js
 let setTime2;
     let start2 = new Observable( (observable) => {
       let count = 0;
@@ -174,7 +174,7 @@ RxJS是一个库，它通过使用observable序列来编写异步和基于事件
 
 ##### 管道自定义：
 
-```
+```js
 import {PipeTransform,Pipe} from '@angular/core';
 /*
 	users:Array<any> =[

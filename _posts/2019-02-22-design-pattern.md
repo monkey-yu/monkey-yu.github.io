@@ -23,7 +23,7 @@ tags:
 
 ES5 的工厂模式示例代码：
 
-```
+```js
 <script>
 	function Car(name,year,country){
         var obj = new Object();
@@ -42,7 +42,7 @@ ES5 的工厂模式示例代码：
 
 ES6的工厂模式示例代码：
 
-```
+```js
 class Man{
     constructor(name){
         this.name =name
@@ -67,7 +67,7 @@ Factory.create('monkey-yu').alertName()
 
 单例模式的示例代码：
 
-```
+```js
 class Singleton{
     constructor(){}
 }
@@ -88,7 +88,7 @@ console.log(s1 === s2)    // true
 
 在 Vuex 源码中，你也可以看到单例模式的使用，虽然它的实现方式不大一样，通过一个外部变量来控制只安装一次 Vuex。
 
-```
+```js
 let Vue // bind on install
 
 export function install (_Vue) {
@@ -107,7 +107,7 @@ export function install (_Vue) {
 
 装饰模式的示例代码：
 
-```
+```js
 function readonly(target,key,descriptor){
     descriptor.writable = false;
     return descriptor
@@ -128,7 +128,7 @@ c.name = '111';  // 不可修改，仍然是monkey-yu
 
 事件代理的实例代码：
 
-```
+```html
 <ul id="ul">
 	<li>1</li>
 	<li>2</li>
@@ -149,7 +149,7 @@ c.name = '111';  // 不可修改，仍然是monkey-yu
 
 发布-订阅模式也叫做观察者模式。通过一对一或者一对多的依赖关系，当对象发生改变时，订阅方会收到通知。在实际代码中发布-订阅模式也很常见，比如点击一个按钮就会触发点击事件就是使用了该模式。
 
-```
+```html
 <ul id="ul"></ul>
 <script>
     let ul = document.querySelector('#ul')
@@ -167,7 +167,7 @@ c.name = '111';  // 不可修改，仍然是monkey-yu
 
 比如实现一个兼容多种浏览器的添加事件方法，示例代码：
 
-```
+```js
 function addEvent(elm,evType,fn,useCapture){
     if(elm.addEventListener){
     	elm.addEventListener(evType, fn, useCapture)
@@ -189,7 +189,7 @@ function addEvent(elm,evType,fn,useCapture){
 
 示例代码：
 
-```
+```js
 var arr=['a','b','c'];
 arr.forEach(function(value,index,arr){
     console.log(value,index,arr)
@@ -213,7 +213,7 @@ arr.forEach(function(value,index,arr){
 
 使用`Object.create`方法来创建这样的对象，该方法创建指定的对象，其对象的`prototype`有指定的对象（也就是该方法传进的第一个参数对象），也可以包含其他可选的指定属性。
 
-```
+```js
 var vehicle ={
     getModel:function(){
         console.log('车辆的模具是：'+ this.model);

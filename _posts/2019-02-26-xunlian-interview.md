@@ -51,7 +51,7 @@ EventEmitter应用场景：子指令创建一个EventEmitter实例，并将其�
 
 children.conponent.ts
 
-```
+```js
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -81,7 +81,7 @@ export class CounterComponent {
 
 App.component.ts
 
-```
+```js
 import { Component } from '@angular/core';
 
 @Component({

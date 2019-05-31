@@ -29,7 +29,7 @@ tags:
 
 链表的创建：下面实现了（1）向队列尾部添加一个元素；（2）在任意位置插入新元素。
 
-```
+```js
 function LinkedLise(){
     var Node = function(element){
         this.element = element;
@@ -110,7 +110,7 @@ function LinkedLise(){
 
 创建一个集合：基于set类来实现。
 
-```
+```js
 function Set(){
     var items = {};
     // has方法：判断值是否在集合中
@@ -154,7 +154,7 @@ function Set(){
 
 创建字典：基于map类型来实现。
 
-```
+```js
 function Dictionary(){
     var items ={};
     this.has =function(key){
@@ -192,7 +192,7 @@ HashTable 类，也叫HashMap类，是Dictionary类的一种散列表实现方�
 
 创建一个散列表HashTable：
 
-```
+```js
 function HashTable(){
     var table =[];
     // 私有方法

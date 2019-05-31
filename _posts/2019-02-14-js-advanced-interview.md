@@ -24,7 +24,7 @@ tags:
 
 先来实现call:
 
-```
+```js
 Function.prototype.myCall =function(context){
     if(typeof this !== 'function'){
         throw new TypeError('Error)
@@ -47,7 +47,7 @@ Function.prototype.myCall =function(context){
 
 apply的实现也类似，区别只在于对参数的处理。
 
-```
+```js
 Function.prototype.myApply = function(context) {
   if (typeof this !== 'function') {
     throw new TypeError('Error')
@@ -68,7 +68,7 @@ Function.prototype.myApply = function(context) {
 
 `bind` 的实现对比其他两个函数略微地复杂了一点，因为 `bind` 需要返回一个函数，需要判断一些边界问题，以下是 `bind` 的实现：
 
-```
+```js
 Function.prototype.myBind =function (context){
     if(typeof this!== 'function'){
         throw new TypeError('Error')
@@ -107,7 +107,7 @@ Function.prototype.myBind =function (context){
 
 自己实现一个new:
 
-```
+```js
 function create(){
 	//创建一个空对象
     let obj ={}

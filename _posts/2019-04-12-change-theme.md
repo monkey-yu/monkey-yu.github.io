@@ -34,7 +34,7 @@ tags:
 
 下面是核心代码：
 
-```
+```js
 changeTheme = color => {
         // 这里防止两次替换颜色值相同，省的造成不必要的替换，同时验证颜色值的合法性
         if (color !== this.state.themeColor && (ABBRRE.test(color) || HEXRE.test(color))) {
@@ -78,7 +78,7 @@ changeTheme = color => {
 
 antd的样式是基于less来编写的，在换肤的时候也是利用了less可以**直接编译css变量**的特性。
 
-```
+```css
 .test-block {
     width: 300px;
     height: 300px;
@@ -92,7 +92,7 @@ antd的样式是基于less来编写的，在换肤的时候也是利用了less�
 
 点击色块换肤的时候，直接去加载less.js,具体代码：
 
-```
+```js
 import React from 'react';
 import { loadScript } from '../../shared/utils';
 import './index.less';
@@ -153,7 +153,7 @@ export default class ColorPicker extends React.Component {
 
 css自定义变量，它拥有像less/sass那种定义变量的能力。声明变量的时候，变量名前面要加两根连线词（—），在使用时候需要var()来访问即可。
 
-```
+```css
 /* 使用sass定义变量*/
 $font-size: 20px
 
