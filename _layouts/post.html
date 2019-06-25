@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
 <!-- Post Header -->
 {% include intro-header.html type='post' %}
 
@@ -13,13 +9,10 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
-
-    <!-- Post Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
-
                 <!-- Multi-Lingual -->
                 {% if page.multilingual %}
                 <!-- Language Selector -->
@@ -28,9 +21,23 @@ layout: default
                     <option value="1"> 英文 English </option>
                 </select>
                 {% endif %}
-
-				{{ content }}
-
+                {{ content }}
+                <!-- 添加gitment 评论框 -->
+                <div id="gitmentContainer"></div>
+                <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+                <script>
+                    var gitment = new Gitment({
+                        owner: 'monkey-yu',
+                        repo: 'https://github.com/monkey-yu/monkey-yu.github.io',
+                        oauth: {
+                            client_id: 'Iv1.ea5f9d8008ea7088',
+                            client_secret: '2cdf9861cd28fa1e5c872d3475c766d0418e8fa3',
+                        },
+                    });
+                    gitment.render('gitmentContainer');
+                </script>
+                <!-- 添加gitment 评论框 end-->
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -59,14 +66,7 @@ layout: default
                 </div>
                 <!-- disqus 评论框 end -->
                 {% endif %}
-
-                {% if site.netease_comment %}
-                <!-- 网易云跟帖 评论框 start -->
-                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-                <!-- 网易云跟帖 评论框 end -->
-                {% endif %}
             </div>  
-
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
@@ -99,21 +99,6 @@ layout: default
         </div>
     </div>
 </article>
-
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-        owner: 'monkey-yu',
-        repo: 'https://github.com/monkey-yu/monkey-yu.github.io',
-        oauth: {
-            client_id: 'Iv1.ea5f9d8008ea7088',
-            client_secret: '2cdf9861cd28fa1e5c872d3475c766d0418e8fa3',
-        },
-    });
-    gitment.render('gitmentContainer');
-</script>
 <!-- add support for mathjax by voleking-->
 {% if page.mathjax %}
   {% include mathjax_support.html %}
