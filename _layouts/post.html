@@ -100,6 +100,20 @@ layout: default
     </div>
 </article>
 
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: 'monkey-yu',
+        repo: 'https://github.com/monkey-yu/monkey-yu.github.io',
+        oauth: {
+            client_id: 'Iv1.ea5f9d8008ea7088',
+            client_secret: '2cdf9861cd28fa1e5c872d3475c766d0418e8fa3',
+        },
+    });
+    gitment.render('gitmentContainer');
+</script>
 <!-- add support for mathjax by voleking-->
 {% if page.mathjax %}
   {% include mathjax_support.html %}
