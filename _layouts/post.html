@@ -30,11 +30,12 @@ layout: default
                     var gitalk = new Gitalk({
                         clientID: 'Iv1.ea5f9d8008ea7088',
                         clientSecret: '2cdf9861cd28fa1e5c872d3475c766d0418e8fa3',
-                        repo: 'https://github.com/monkey-yu/monkey-yu.github.io',
+                        repo: 'monkey-yu.github.io',
                         owner: 'monkey-yu',
                         admin: ['monkey-yu'],
                         id: location.pathname,      // Ensure uniqueness and length less than 50
-                        distractionFreeMode: false  // Facebook-like distraction free mode
+                        distractionFreeMode: false,  // Facebook-like distraction free mode
+                        labels: ['bug','duplicate','enhancemaent']      
                         })
                         gitalk.render('gitalk-container')
                 </script>
