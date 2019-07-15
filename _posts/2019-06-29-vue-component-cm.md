@@ -15,7 +15,7 @@ tags:
 
 一般来说，组件有以下几种关系：
 
-![vue-com1](/Users/mac13/Desktop/vue-com1.jpg)
+![vue-com1](/img/post_img/vue/vue-com1.jpg)
 
 父子关系、兄弟关系、隔代关系。
 
@@ -51,7 +51,7 @@ tags:
 <template>
   <div class="hello">
     <ul>
-      <li v-for="user in users">{{user}}</li>//遍历传递过来的值，然后呈现到页面
+      <li v-for="user in users">{{user}}</li>
     </ul>
   </div>
 </template>
