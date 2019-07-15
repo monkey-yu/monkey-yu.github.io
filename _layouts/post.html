@@ -22,24 +22,6 @@ layout: default
                 </select>
                 {% endif %}
                 {{ content }}
-                <!-- 添加gitment 评论框 -->
-                <div id="gitalk-container"></div>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-                <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-                <script>
-                    var gitalk = new Gitalk({
-                        clientID: 'Iv1.ea5f9d8008ea7088',
-                        clientSecret: '2cdf9861cd28fa1e5c872d3475c766d0418e8fa3',
-                        repo: 'monkey-yu.github.io',
-                        owner: 'monkey-yu',
-                        admin: ['monkey-yu'],
-                        id: '',      // Ensure uniqueness and length less than 50
-                        distractionFreeMode: false,  // Facebook-like distraction free mode
-                        labels: []     
-                        })
-                        gitalk.render('gitalk-container')
-                </script>
-                <!-- 添加gitment 评论框 end-->
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}

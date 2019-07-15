@@ -105,8 +105,12 @@ friends: [
       title: 'nan_cunpei',
       href: 'https://www.kopei.top'
     },
-     {
+    {
       title: 'fu_pinyou',
       href: 'http://blog.neulana.com/'
+    },
+    {
+      title: 'deng_liuyan',
+      href: 'https://dd-dly.github.io'
     }
 ]
