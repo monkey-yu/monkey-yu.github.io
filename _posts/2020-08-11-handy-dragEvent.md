@@ -3,7 +3,7 @@ layout:     post
 title:      "手写div拖拽事件"
 date:       2020-08-11 12:00:00
 author:     "monkey-yu"
-header-img: "img/tree.jpg"
+header-img: "img/whale.jpg"
 catalog: True
 tags:
     - JS
