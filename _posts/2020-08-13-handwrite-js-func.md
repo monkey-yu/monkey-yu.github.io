@@ -85,3 +85,30 @@ function Conver(number,base=2){
 }
 ```
 
+#### 5.手写AJAX
+
+```javascript
+var request = function(){
+  var xmlHttp;
+  if(window.XMLHttpRequest){
+    xmlHttp = new XMLHttpRequest();
+  }else {
+    // 老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象：
+    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlHttp.open('GET','/api/test',true);
+  xmlHttp.onreadystatechange = function(){
+    if (xmlHttp.readyState === 4 && xmlHttp.status === 200){
+      console.log(xmlHttp.responseText)
+    }
+  };
+  xmlHttp.send()
+}
+```
+
+AJAX是在不重新加载整个页面的情况下，与服务器进行数据交换并且更新部分网页内容。
+
+AJAX不需要任何浏览器插件，只要用户允许javascript在浏览器上执行即可。
+
+AJAX = 异步的javascript + XML
+
