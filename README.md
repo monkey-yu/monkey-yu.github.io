@@ -19,7 +19,7 @@ jekyll serve
 
 ## 待完成
 1. archive的blog总数实现数字滚动。✅
-2. 添加评论功能。
+2. 添加点赞功能。
 3. 添加浏览数量功能。 ✅
 4. 添加projects页面，显示github上的项目。
 5. 把grunt使用起来。
