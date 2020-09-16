@@ -51,41 +51,5 @@ export function hasPermission(permission){
 }
 ```
 
-#### 3.数据结构处理
 
-题目：
-
-```javascript
-@param rs对象，格式为 {h, d}, h/d分别是一个数组，表示一张表的表头字段与内容。
-@return 一个数组，每一项为一个对象。
-示例：
- var rs = {
-  h: ["id", "name"], 
-  d: [ [100, "Tom"], [101, "Jane"] ] 
- };
- var arr = rs2Array(rs); 
- // 结果为
- arr = [
-  {id: 100, name: "Tom"},
-  {id: 101, name: "Jane"} 
- ];
-```
-
-实现：
-
-```javascript
-function rs2Array(rs){
-	let res = [];
-	let keyArr = Object.values(rs)[0];
-	let valuesArr = Object.values(rs)[1];
-	for(let i=0;i < valuesArr.length;i++){
-		let item ={};
-		for (let j=0;j<keyArr.length;j++){
-			item[keyArr[j]] = valuesArr[i][j];
-		}
-		res.push(item);
-	}
-	return res;
-}
-```
 
