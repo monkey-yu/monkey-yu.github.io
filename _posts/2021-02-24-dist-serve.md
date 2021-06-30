@@ -19,7 +19,7 @@ tags:
 
 2. 在dist 外的一层路径下cmd 执行 serve dist 即可。这时候会显示访问的链接地址，通常为5000端口。
 
-   如果打开的项目图片不显示或者缺失文件。可能是build 之前。 vue.confif.js 文件里的
+   如果打开的项目图片不显示或者缺失文件。可能是build 之前。 vue.config.js 文件里的
 
    ```
    publicPath: './',
