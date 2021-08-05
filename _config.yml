@@ -120,5 +120,9 @@ friends: [
     {
       title: 'huang_xuan',
       href: 'http://huangxuan.me/'
+    },
+     {
+      title: 'Green_Memory',
+      href: 'https://blog.gmem.cc/'
     }
 ]
