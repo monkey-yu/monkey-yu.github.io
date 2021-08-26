@@ -5,7 +5,7 @@ header-img: img/bg-index.jpg
 email: 914888156@qq.com
 description: ""
 keyword: "monkey-yu, @monkey-yu, 赵瑜的博客, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: ""              # your host, for absolute URL
+url: "https://monkey-yu.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
