@@ -331,3 +331,4 @@ npm publish
 
 至此，发布包完成。可以去npm官网上看到自己的包。
 
+参考链接： https://www.jianshu.com/p/0fd669635b76
